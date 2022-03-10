@@ -242,8 +242,9 @@ nav{
 
 #mapirris{
     float: left;
-    border: 10px solid #191919;
+    /*border: 10px solid #191919;*/
     text-align: center;
+    width: 60%;
 }
 
 #t-contacto{
@@ -252,7 +253,7 @@ nav{
 
 #contacto{
     padding: 2rem;
-    border: 5px solid #f52004dc;
+    /*border: 5px solid #f52004dc;*/
     display: flex;
     justify-content:space-around
 }
@@ -276,7 +277,7 @@ nav{
     background-color: #C2A8CD;
     border-radius: 25px 0px 0px 25px;
     margin-bottom: 10px;
-    border: 5px solid #f52004dc;
+    /*border: 5px solid #f52004dc;*/
 
 }
 
@@ -340,8 +341,90 @@ nav{
 }
 
 #container-cont{
-    border: 10px solid #00b2b1;
-    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /*border: 10px solid #24b200;*/
     width: 100%;
 }
 
+/*Estilos  login*/
+
+#login{
+    display: flex;
+    flex-direction: row; /* Row para que quede centrado*/
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formlogin h1{
+    text-align: center;
+}
+
+.formlogin i{
+    color:var(--purple-color);
+    background-color: var(--white-color);
+    padding: 1rem 0.8rem;
+    border-radius: 100%;
+    border: 4px solid var(--gray-color);
+}
+
+.formlogin{
+    margin-top: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 2px var(--dark-color);
+    background-color: rgba(156, 154, 154, 0.178);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formlabel{
+    font-weight: bold;
+}
+
+.forminput{
+    border: 3px solid var(--gray-color);
+    padding: 0.5rem;
+    outline: none;
+}
+
+.forminput::placeholder{
+    font-size: 00.8rem;
+}
+
+.forminput:focus{   
+    border: 2px solid var(--dark-color);  
+}
+
+.btnazul, .btnmorado{
+    padding: 0.5rem;
+    font-size: 00.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btnazul{
+    background-color: var(--blue-color);
+}
+
+.btnmorado{
+    background-color: var(--purple-color);
+}
+
+.olvido{
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 0 0 5px;
+}
+
+.olvido a{
+    color: var(--blue-color);
+}
