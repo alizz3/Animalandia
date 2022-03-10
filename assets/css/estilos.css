@@ -54,6 +54,7 @@ header{
     font-weight: bold;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .b-azul:hover{   
