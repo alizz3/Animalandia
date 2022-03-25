@@ -1,52 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-:root{
-	--dark-color:#191919;
-	--white-color:#FFFFFF;
-	--purple-color:rgb(117,41,149);
-	--blue-color:#00B2B1;
-	--gray-color:#828282;
-	--ligh-color:#F3F3F3;
+
+:root {
+    --dark-color: #191919;
+    --white-color: #FFFFFF;
+    --purple-color: rgb(117, 41, 149);
+    --blue-color: #00B2B1;
+    --gray-color: #828282;
+    --ligh-color: #F3F3F3;
 }
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
 
-body{
+body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 
 }
 
 
-h1,h2,h3{
+h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     color: var(--purple-color);
 }
 
-p{
+p {
     color: var(--dark-color);
     text-align: center;
 }
 
 /*Estilos Home*/
 
-header{
+header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-.logo img{
+.logo img {
+    padding-bottom: 20px;
     max-width: 270px;
     width: 100%;
 }
 
-.b-azul{
+.b-azul {
     background: linear-gradient(#00b2b1, #016e6e);
     background-color: var(--blue-color);
     border-radius: 5px;
@@ -55,14 +58,15 @@ header{
     padding: 0.5rem 1rem;
     cursor: pointer;
     text-decoration: none;
-}
+    color: var(--dark-color);
+    margin-right: 5px;}
 
-.b-azul:hover{   
-    background: linear-gradient(#016e6e, #00b2b1 );
+.b-azul:hover {
+    background: linear-gradient(#016e6e, #00b2b1);
     transition: all 1s ease 1s;
 }
 
-.b-morado{
+.b-morado {
     background-color: white;
     border-radius: 5px;
     border-style: solid;
@@ -71,107 +75,119 @@ header{
     padding: 0.5rem 1rem;
     cursor: pointer;
     color: var(--purple-color);
+    margin-left: 5px;
 }
 
-.b-morado:hover{   
+.b-morado:hover {
     background-color: var(--purple-color);
     color: var(--white-color);
 }
 
-nav{
+nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    background-color: var(--purple-color);  
+    background-color: var(--purple-color);
 }
 
-.item{
+.item {
     padding: 1rem;
     color: var(--white-color);
     text-decoration: none;
 }
 
-.item:hover{
+.item:hover {
     color: rgb(255, 255, 255, 0.4);
     transition: transform;
 }
 
 
-#agenda{
+#agenda {
     display: flex;
+    flex-direction: column;
     margin-top: 0.2rem;
 }
 
-.cita{
-    flex-basis: 70%;
+.cita {
     background-image: url(../img/fondo.jpg);
     padding: 2rem;
 }
 
-.cita h1{
+.cita h1 {
     color: var(--dark-color);
     font-size: 26px;
     text-transform: uppercase;
 }
 
-.cita h3{
+.cita h3 {
     color: var(--dark-color);
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.promocion{
-    flex-basis: 30%;
+.promocion {
     background-color: var(--purple-color);
     text-align: center;
     padding: 2rem;
 }
 
-.promocion h1{
+.promocion h1 {
     color: var(--white-color);
     font-size: 28px;
     text-shadow: 2px 2px 2px var(--dark-color);
 }
 
-.promocion img{
+.promocion img {
     border-radius: 50%;
-    border: 7px solid var(--dark-color);
+    border: 7px solid var(--white-color);
+    inset: 0 0 0 1px var(--white-color);
+    max-width: 300px;
+    width: 50%;
 }
 
-.tseccion{
+.tseccion {
     text-align: center;
     font-weight: bolder;
     text-shadow: 1px 2px 4px #747272;
     font-size: 32px;
 }
 
-#servicios{
+#servicios {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
 }
 
-.servicio{
+.servicio {
     margin: 10px;
     text-align: center;
+    padding: 0 4rem;
 }
 
-.servicio img{
+.servicio img {
     max-width: 200px;
-    width: 100%;
+    width: 60%;
+
 }
 
+footer{
+    background-image: url(../img/fondo.jpg);
+}
 
-
-.box-footer{
+.box-footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding: 2rem;
     background-color: rgba(117, 41, 149, 0.404);
 }
 
-.foot{
+.foot {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .foot h3 {
@@ -185,38 +201,38 @@ nav{
 
 /*Hoja de estilos "Equipo"*/
 
-#banner img{
+#banner img {
     width: 100%;
 }
 
-#equipos{
+#equipos {
     display: flex;
     justify-content: space-between;
 }
 
-.equipo img{
+.equipo img {
     max-width: 200px;
     width: 100%;
     border-radius: 19rem;
 }
 
-.equipo{
+.equipo {
     margin: 10px;
     text-align: center;
 }
 
-.equipo h4{
+.equipo h4 {
     font-size: 19px;
     text-shadow: 1px 1px 3px #968f8f;
 }
 
-#services{
+#services {
     display: flex;
     margin: 3em;
     flex-wrap: wrap;
 }
 
-.service{
+.service {
     width: 45%;
     display: flex;
     align-items: center;
@@ -224,52 +240,53 @@ nav{
 
 }
 
-.img-service{
+.img-service {
     margin-right: 1em;
     max-width: 150x;
 }
 
-.text-service p{
+.text-service p {
     text-align: left;
 }
-.text-service h3{
+
+.text-service h3 {
     color: var(--dark-color);
     font-size: 22px;
 }
 
-.img-service img{
+.img-service img {
     max-width: 150px;
 }
 
-#mapirris{
+#mapirris {
     float: left;
     /*border: 10px solid #191919;*/
     text-align: center;
     width: 60%;
 }
 
-#t-contacto{
+#t-contacto {
     text-align: center;
 }
 
-#contacto{
+#contacto {
     padding: 2rem;
     /*border: 5px solid #f52004dc;*/
     display: flex;
-    justify-content:space-around
+    justify-content: space-around
 }
 
-.contacto-item{
+.contacto-item {
     margin: 20px;
     text-align: start;
 }
 
-.mapa iframe{
+.mapa iframe {
     width: 270px;
     height: 230px;
 }
 
-.form-contacto{
+.form-contacto {
     display: flex;
     flex-direction: column;
     width: 520px;
@@ -282,7 +299,7 @@ nav{
 
 }
 
-.form-contacto h1{
+.form-contacto h1 {
     color: #FFFFFF;
     background-color: #A16DB7;
     margin-top: 0px;
@@ -293,12 +310,12 @@ nav{
 
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
 }
 
-.form-group input, textarea{
+.form-group input, textarea {
     width: 30rem;
     height: 3rem;
     border: 2px solid #A16DB7;
@@ -306,42 +323,43 @@ nav{
     border-radius: 25px;
     padding-left: 10px;
 }
-#name{
+
+#name {
     width: 15rem;
     border-radius: 25px 0px 0px 25px;
 
 }
 
-#lastname{
+#lastname {
     width: 15rem;
     border-radius: 0px 25px 25px 0px;
 
 }
 
-.espacios{
+.espacios {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center
+    align-items: center
 }
 
-#msg{
+#msg {
     height: 100px;
 }
 
-.espacios label{
+.espacios label {
     margin-bottom: 10px;
 }
 
-#btn{
+#btn {
     width: 20rem;
-    background-color:#A16DB7 ;
+    background-color: #A16DB7;
     color: #FFFFFF;
     font-size: 20px;
 }
 
-#container-cont{
+#container-cont {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -351,27 +369,28 @@ nav{
 
 /*Estilos  login*/
 
-#login{
+#login {
     display: flex;
-    flex-direction: row; /* Row para que quede centrado*/
-    justify-content:center;
+    flex-direction: row;
+    /* Row para que quede centrado*/
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.formlogin h1{
+.formlogin h1 {
     text-align: center;
 }
 
-.formlogin i{
-    color:var(--purple-color);
+.formlogin i {
+    color: var(--purple-color);
     background-color: var(--white-color);
     padding: 1rem 0.8rem;
     border-radius: 100%;
     border: 4px solid var(--gray-color);
 }
 
-.formlogin{
+.formlogin {
     margin-top: 10px;
     max-width: 400px;
     width: 100%;
@@ -381,51 +400,169 @@ nav{
     padding: 40px;
 }
 
-.formgroup{
+.formgroup {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.formlabel{
+.formlabel {
     font-weight: bold;
 }
 
-.forminput{
+.forminput {
     border: 3px solid var(--gray-color);
     padding: 0.5rem;
     outline: none;
 }
 
-.forminput::placeholder{
+.forminput::placeholder {
     font-size: 00.8rem;
 }
 
-.forminput:focus{   
-    border: 2px solid var(--dark-color);  
+.forminput:focus {
+    border: 2px solid var(--dark-color);
 }
 
-.btnazul, .btnmorado{
+.btnazul, .btnmorado {
     padding: 0.5rem;
     font-size: 00.8rem;
     border: none;
     cursor: pointer;
 }
 
-.btnazul{
+.btnazul {
     background-color: var(--blue-color);
 }
 
-.btnmorado{
+.btnmorado {
     background-color: var(--purple-color);
 }
 
-.olvido{
+.olvido {
     text-align: center;
     font-size: 0.9rem;
     padding: 10px 0 0 5px;
 }
 
-.olvido a{
+.olvido a {
     color: var(--blue-color);
+}
+
+
+
+/*estilos dashboard*/
+
+.sesion {
+    text-align: right;
+    color: var(--purple-color);
+    display: flex;
+    align-items: center;
+}
+
+.sesion img {
+    border-radius: 50px;
+    width: 60px;
+    border: 3px solid var(--purple-color);
+}
+
+.dashboard {}
+
+.menu {}
+
+.item {}
+
+.contenido {}
+
+
+
+
+
+
+/*estilos  tips*/
+.banner-tips {
+    display: flex;
+    background-color: #00B2B1;
+    height: 400px;
+    margin: 20px 25px;
+}
+
+.banner-item-tips {
+    flex: 1;
+    color: var(--ligh-color);
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex-grow 0.3s;
+    background-position-y: -300px;
+}
+
+.banner-item-tips:hover{
+    flex-grow: 10;
+    background-position-y: -570px;
+    transition: background-position-y 1s;
+    
+}
+
+.banner-item-tips:hover .banner-title{
+    transform: rotate(0);
+}
+
+.banner-item-tips:nth-child(1) {
+    background-image: url(../img/perro1.jpg);
+    background-size: cover;
+}
+
+.banner-item-tips:nth-child(2) {
+    background-color: #9e1919;
+}
+
+.banner-item-tips:nth-child(3) {
+    background-color: #ec6409;
+}
+
+.banner-item-tips:nth-child(4) {
+    background-color: #f3ef01;
+}
+
+.banner-item-tips:nth-child(5) {
+    background-color: #c5e609;
+}
+
+.banner-title{
+    color: #000000;
+    transform: rotate(-90deg);
+    transition: transform  0.3s;
+    font-size: px;
+}
+
+/*resoluciones medias*/
+@media screen and (min-width: 768px){
+    header{
+        background-color: red;
+        flex-direction: row;
+    }
+    #agenda{
+        flex-direction: row;
+    }
+    .cita{
+        flex-basis: 50%;
+    }
+    .promocion{
+        flex-basis: 50%;
+    }
+    .promocion img {
+        max-width: 300px;
+        width: 90%;
+    }
+}
+
+/*resoluciones medias*/
+@media screen and (min-width: 1024px){
+    header{
+        background-color: rgb(0, 255, 128);
+        flex-direction: row;
+    }
 }
